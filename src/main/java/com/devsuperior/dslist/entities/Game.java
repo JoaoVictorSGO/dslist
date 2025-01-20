@@ -24,7 +24,7 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
-	// Quando tem um camelCase, ele automaticamente cria um sublinhada ex: short_description.
+	// Quando tem um camelCase, ele automaticamente cria um sublinhado ex: short_description.
 	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	//Caso não coloque essa anotação, JPA vai colocar um varchar que vai até 255.
