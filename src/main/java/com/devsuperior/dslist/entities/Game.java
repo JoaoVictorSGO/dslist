@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Table(name= "tb_gamer") // Cria a tabela com esse nome no banco
 public class Game {
 	
-	@Id // Essa duas anotação são usada junta para mostra que é uma chave 
+	@Id // Essa duas anotação são usada juntas para mostra que é uma chave 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
@@ -23,7 +23,7 @@ public class Game {
 	private String genre;
 	private String platform;
 	private String imgUrl;
-	// Quando tem um cameCase, ele automaticamente cria um undeline ex: short_description.
+	// Quando tem um camelCase, ele automaticamente cria um sublinhada ex: short_description.
 	private String shortDescription;
 	private String longDescriptiion;
 	
