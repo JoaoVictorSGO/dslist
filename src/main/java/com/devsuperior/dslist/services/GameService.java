@@ -17,6 +17,7 @@ public class GameService {
 	@Autowired
 	private GameRepository gameRepository;
 	
+	
 	@Transactional(readOnly = true)
 	public GameDTO findById(Long id) {
 		Game result = gameRepository.findById(id).get();
@@ -30,4 +31,7 @@ public class GameService {
 		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList(); // transformando uma lista de game em uma lista de gameMInDTO
 		return dto;
 	}
+
+	
+	
 }
