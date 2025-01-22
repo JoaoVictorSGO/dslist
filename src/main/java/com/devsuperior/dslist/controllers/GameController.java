@@ -19,6 +19,7 @@ public class GameController {
 	@Autowired
 	private GameService gameService;
 	
+	//Retorna um unico objeto GameDTO 
 	@GetMapping(value = "/{id}")
 	public GameDTO findById(@PathVariable Long id){
 		GameDTO result = gameService.findById(id);
